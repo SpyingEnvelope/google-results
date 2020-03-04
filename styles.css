@@ -1,0 +1,678 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  font-family: arial;
+  font-size: 13px;
+}
+
+html, body {
+  box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS reset ends here */
+
+a {
+  cursor: pointer;
+}
+
+.headercontainer {
+  display: grid;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100px;
+  grid-template-columns: 7% 1fr auto;
+  grid-template-rows: 1fr 1fr;
+}
+
+#googleimg {
+  position: relative;
+  left: 5%;
+  max-width: 80%;
+  height: auto;
+  grid-row: 1 / 3;
+  align-self: center;
+}
+
+form {
+  align-self: center;
+  width: 100%;
+  align-self: center;
+  grid-row: 1 / 3;
+}
+
+#searchbar {
+  width: 36%;
+  height: 2.5em;
+  border-radius: 20px;
+  border: 1px solid #E8E8E8;
+  outline: none;
+}
+
+#microphone {
+  position: relative;
+  right: 4%;
+  color: #4C96FF;
+}
+
+#searchicon {
+  position: relative;
+  right: 3%;
+  color: #4C96FF;
+}
+
+.gapps {
+  grid-row: 1 / 3;
+  align-self: center;
+}
+
+.fa-th {
+  font-size: 20px;
+  padding: 0.5rem;
+  color: gray;
+}
+
+.fa-th:hover {
+  background-color: #E5E5E5;
+  border-radius: 50%;
+}
+
+.fa-user-circle {
+  font-size: 20px;
+  padding: 0.5rem;
+  color: gray;
+}
+
+.fa-user-circle:hover {
+  background-color: #E5E5E5;
+  border-radius: 50%;
+}
+
+.navcontainer {
+  display: grid;
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid #E8E8E8;
+  grid-template-columns: 7% 1fr auto;
+  grid-template-rows: 1fr 1fr;
+}
+
+#navbar {
+  display: flex;
+  grid-column: 2 / 3;
+  font-family: arial;
+  font-size: 13px;
+  word-spacing: 0.3em;
+}
+
+.navtop {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.top-anchor {
+  text-decoration: none;
+  color: gray;
+}
+
+.top-anchor:hover {
+  color: #4C96FF;
+}
+
+#a-all {
+  padding-bottom: 38%;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-bottom: 4px solid #005BDB;
+  color: #4C96FF;
+}
+
+#a-news {
+  padding: none;
+}
+
+#a-settings {
+  padding-left: 3em;
+}
+
+.maincontainer {
+  font-family: arial;
+  font-size: 14px;
+}
+
+#resultnumber {
+ color: #70757a;
+}
+
+.main-grid {
+  position: relative;
+  left: 8%;
+  width: 92%;
+  display: grid;
+  grid-auto-columns: 35%;
+  line-height: 1.5;
+}
+
+.ads {
+  text-decoration: none;
+  color: #3C4043;
+}
+
+.adbold {
+  font-weight: bold;
+}
+
+.anchorheader {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.anchorheader:hover {
+  border-bottom: 1px solid blue;
+}
+
+.paraanchor1 {
+  text-decoration: none;
+}
+
+.paraanchor1:hover {
+  text-decoration: underline;
+}
+
+.headerurl {
+  font-size: 14px;
+  color: #3C4043;
+  text-decoration: none;
+}
+
+.date {
+  color: #70757a;
+}
+
+.item9 {
+  display: grid;
+  grid-auto-rows: 1fr;
+  height: 150px;
+  border: 1px solid #E8E8E8;
+  border-radius: 10px;
+  padding-top: 10px;
+}
+
+#para9 {
+  margin: 0 0 0 10px;
+  font-size: 20px;
+  border-bottom: 1px solid #E8E8E8;
+}
+
+.para9q {
+  margin: 0 0 0 10px;
+  box-sizing: border-box;
+  align-self: center;
+  border-bottom: 1px solid #E8E8E8;
+  font-size: 16px;
+}
+
+.para9a {
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown {
+  text-decoration: none;
+  color: #70757A;
+  position: absolute;
+  left: 33%;
+}
+
+#para9-4 {
+  border: none;
+}
+
+.item15 {
+  display: grid;
+  width: 100%;
+  border: 1px solid #E8E8E8;
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  grid-auto-columns: 14.2%;
+  row-gap: 0.5em;
+}
+
+#related15 {
+  grid-column: 1 / 3;
+  color: #70757a;
+}
+
+#h3related15 {
+  grid-column: 1 / 5;
+  font-size: 20px;
+}
+
+#wordpresslogo {
+  grid-column: 1 / 2;
+  grid-row: 3;
+  object-fit: cover;
+  justify-self: center;
+  max-width: 100%;
+  height: auto;
+}
+
+#wordpress {
+  grid-column: 1 / 2;
+  grid-row: 4;
+  object-fit: cover;
+  justify-self: center;
+}
+
+#godaddylogo {
+  grid-column: 2 / 3;
+  grid-row: 3;
+  object-fit: cover;
+  max-width: 200%;
+  height: auto;
+}
+
+#godaddy {
+  grid-column: 2 / 3;
+  grid-row: 4;
+  justify-self: center;
+}
+
+#weeblylogo {
+  grid-column: 3 / 4;
+  grid-row: 3;
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  z-index: 5;
+}
+
+#weebly {
+  grid-column: 3 / 4;
+  grid-row: 4;
+  justify-self: center;
+}
+
+#jimdologo {
+  grid-column: 4 / 5;
+  grid-row: 3;
+  object-fit: cover;
+  justify-self: center;
+  max-width: 200%;
+  height: auto;
+  z-index: 4;
+}
+
+#jimdo {
+  grid-column: 4 / 5;
+  grid-row: 4;
+  justify-self: center;
+}
+
+.para15anchor {
+  text-decoration: none;
+  color: blue;
+}
+
+.para15anchor:hover {
+  text-decoration: underline;
+}
+
+.item16 {
+  display: grid;
+  width: 100%;
+  border: 1px solid #E8E8E8;
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  grid-auto-columns: 14.2%;
+  row-gap: 0.5em;
+}
+
+#related16 {
+  grid-column: 1 / 5;
+}
+
+#h3related16 {
+  grid-column: 1 / 5;
+  font-size: 20px;
+}
+
+.para16anchor {
+  text-decoration: none;
+}
+
+.para16anchor:hover {
+  text-decoration: underline;
+}
+
+#mobiriselogo {
+  grid-column: 1 / 2;
+  grid-row: 3;
+  object-fit: cover;
+  justify-self: center;
+  max-width: 100%;
+  height: auto;
+}
+
+#Mobirise {
+  grid-column: 1 / 2;
+  grid-row: 4;
+}
+
+#webflowlogo {
+  position: relative;
+  top: 40%;
+  grid-column: 2 / 3;
+  grid-row: 3;
+  object-fit: cover;
+  justify-self: center;
+  max-width: 100%;
+  height: auto;
+}
+
+#webflow {
+  grid-column: 2 / 3;
+  grid-row: 4;
+}
+
+#googleweblogo {
+  grid-column: 3 / 4;
+  grid-row: 3;
+  object-fit: cover;
+  justify-self: center;
+  max-width: 100%;
+  height: auto;
+}
+
+#googleweb {
+  grid-column: 3 / 4;
+  grid-row: 4;
+}
+
+#adobelogo {
+  grid-column: 4 / 5;
+  grid-row: 3;
+  object-fit: cover;
+  justify-self: center;
+  max-width: 100%;
+  height: auto;
+}
+
+#adobe {
+  position: relative;
+  left: 10%;
+  grid-column: 4 / 5;
+  grid-row: 4;
+  justify-self: center;
+  align-self: center;
+}
+
+#h3relatedsearch {
+  font-size: 20px;
+}
+
+.bottomulcontainer {
+  display: grid;
+  grid-template-columns: 35% 1fr;
+  box-sizing: border-box;
+  grid-gap: 0.5em;
+}
+
+.ul-anchor {
+  text-decoration: none;
+}
+
+.ul-anchor:hover {
+  text-decoration: underline;
+}
+
+.scrollcontainer {
+  display: block;
+  width: 300px;
+  justify-self: center;
+  background-image: url ("https://www.google.com/images/nav_logo299.webp");
+  background-repeat: no-repeat;
+  background-position: -24px;
+}
+
+#googlescroll {
+  display: block;
+  width: 350%;
+  margin: -70% 10% 0 13%;
+}
+
+.bottompages {
+  display: grid;
+  grid-template-columns: 24px repeat(10, 15px) 30px 15px;
+  grid-template-rows: 40px 20px;
+  row-gap: 0.3em;
+  column-gap: 0.3em;
+  overflow: hidden;
+  justify-self: center;
+}
+
+.bottom-a {
+  grid-row: 2;
+  align-self: center;
+  justify-self: center;
+  color: #4C96FF;
+  text-decoration: none;
+}
+
+.bottom-a:hover {
+  text-decoration: underline;
+}
+
+#page1 {
+  grid-column: 2 / 3;
+  color: black;
+}
+
+#page2 {
+  grid-column: 3 / 4;
+}
+
+#page3 {
+  grid-column: 4 / 5;
+}
+
+#page4 {
+  grid-column: 5 / 6;
+}
+
+#page5 {
+  grid-column: 6 / 7;
+}
+
+#page6 {
+  grid-column: 7 / 8;
+}
+
+#page7 {
+  grid-column: 8 / 9;
+}
+
+#page8 {
+  grid-column: 9 / 10;
+}
+
+#page9 {
+  grid-column: 10 / 11;
+}
+
+#page10 {
+  grid-column: 11 / 12;
+}
+
+#next {
+  grid-column: 14 / 15;
+}
+
+#gscroll {
+  grid-column: 1 / 2;
+  background-image: url("https://www.google.com/images/nav_logo299.webp");
+  background-repeat: no-repeat;
+  background-position: 1% 10%;
+}
+
+#redo {
+  grid-column: 2 / 3;
+  background-image: url("https://www.google.com/images/nav_logo299.webp");
+  background-repeat: no-repeat;
+  background-position: 17% 10%;
+  width: 16px;
+}
+
+.yellowo {
+  background-image: url("https://www.google.com/images/nav_logo299.webp");
+  background-repeat: no-repeat;
+  background-position: 28% 10%;
+  width: 16px;
+}
+
+#littleg {
+   background-image: url("https://www.google.com/images/nav_logo299.webp");
+  background-repeat: no-repeat;
+  background-position: 45% 10%;
+  width: 40px;
+}
+
+#forwardscroll {
+  grid-column: 14 / 15;
+  grid-row: 1;
+  justify-self: center;
+  align-self: center;
+  color: #4C96FF;
+}
+
+footer {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.upperlist {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 3em;
+  background-color: #EFEFEF;
+  box-sizing: border-box;
+  border: 1px solid #E8E8E8;
+}
+
+#canada {
+  margin-left: 7%;
+  font-size: 15px;
+  color: rgba(0,0,0,.54);
+  padding-right: 10px;
+  border-right: 1px solid #D1D1D1;
+}
+
+#location {
+  padding-left: 10px;
+}
+
+.footerup {
+  color: #5f6368;
+}
+
+#stronglocation {
+  font-weight: bold;
+  color: black;
+}
+
+#dot {
+  color: gray;
+}
+
+.footertopanchor {
+  color: #5f6368;
+  text-decoration: none;
+}
+
+.footertopanchor:hover {
+  color: #333;
+}
+
+.lowerlist {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 3em;
+  background-color: #EFEFEF;
+  box-sizing: border-box;
+  border: 1px solid #E8E8E8;
+}
+
+.lowerfooter {
+  color: #5f6368;
+  padding-left: 2.5em;
+  text-decoration: none;
+}
+
+.lowerfooter:hover {
+  color: #333;
+}
+
+#lowerhelp {
+  margin-left: 5.3%;
+}
+
+/* #googlescroll {
+  grid-column: 1 / 2;
+  grid-row: 1;
+  width: 900%;
+  position: relative;
+  bottom: 30px;
+  min-width: 0;
+} */
+
